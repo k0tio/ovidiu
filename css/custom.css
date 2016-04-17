@@ -1,0 +1,101 @@
+.cards-row {
+    margin-top: -94px;
+}
+.card {
+    background-color: #ffff19;
+    width: 300px;
+    min-height: 300px;
+    display: inline;
+}
+.circle h1 {
+    color: black;
+    font-size: 18px;
+    text-align: center;
+    font-weight: 400;
+}
+figure {
+    width: 25% !important;
+    display: inline;
+    position: relative;
+    margin: 0 auto; 
+    padding: 0px;
+    float: left;
+}
+figure img {}
+.topfield::-moz-placeholder,
+.topfield::-webkit-placeholder {
+    color: white;
+}
+.mobile {
+   position:relative;
+    margin-top: -190px;
+    float: right;
+    max-width: 250px;
+}
+.description {
+    font-size: 16px;
+    width: 35%;
+
+    text-align: justify;
+}
+.topfield {
+
+    margin-top: 3px;
+    padding: 13px 16px;
+    border-radius: 10px;
+    background: #0D8C6F;
+    color: white;
+    border: none;
+}
+.topfield:focus,
+.topfield:active,
+.topfield:hover {
+    outline: none;
+}
+
+.circle {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-color: #f1f1f1;
+    margin: 10px;
+    padding: 0;
+    float: left;
+}
+.card-2 {
+    background-color: #ffff19;
+    width: 600px;
+    height: 300px;
+    display: inline;
+}
+.container-small {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container-bg {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: -80px;
+    z-index: 4;
+    background-color: white;
+    width: 906px;
+    height: 100px;
+}
+@media (min-width: 1200px) {
+    .container-small {
+        width: 900px;
+    }
+}
+.card img {
+    width: 296px;
+    height: 300px;
+}
+.card-2 img {
+    width: 500px;
+    height: 300px;
+    margin-left: -10px;
+}
