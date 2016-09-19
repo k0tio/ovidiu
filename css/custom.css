@@ -1,30 +1,36 @@
-::selection { 
-    background: #0D8c6f;
+::selection {
+    background: #8c67b8 ;
     color: white;
 }
-figure {
-    width: 24% !important;
-   
-    display: inline;
+
+.figure {
+    overflow: hidden;
+    padding: 0;
+    display: inline-block;
+    max-width: 100%;
+    max-height: 300px;
+}
+.figure  img {
+    width: 100%;
+    min-height: 300px;
     position: relative;
-    margin: 0 auto; 
-    padding: 0px;
     
+
 }
 .title {
     margin-bottom: 70px;
-    
+
     font-weight: 700;
     text-align: center;
     color: #fff;
     padding: 0 0 16px;
-   
+
 }
 hr {
     width: 90px;
     text-align: center;
-    background: #0D8C6F;
-    margin-top: -82px;
+    background: #8c67b8;
+    margin-top: -75px;
     border: none;
     margin-bottom: 82px;
     height: 4px;
@@ -33,17 +39,57 @@ hr {
 #about .title {
     margin-top: 20px;
     text-align: center;
-    color: #333;
+    color: #555;
     padding: 0 0 16px;
     font-weight: 700;
-    
-    
-    
+
+
+
+}
+.carousel {
+    height: 70vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background:
+    linear-gradient(to right, rgba(187,106,255,0.9), rgba(103,139,255,0.9) 100%), url('../img/bg.jpg');; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+}
+.carousel-caption {
+    top: 10%;
+    bottom: 0;
+    left: 15%
+}
+.carousel-inner .item a img {
+    position: absolute;
+    top: 15vh;
+    right: 15vw;
+    height: 300px;
+    width: auto;
+}
+.carousel-inner .item a:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 300;
+    height: 100%;
+    display: inline-block;
+    background: -moz-linear-gradient(top, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.65) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.65) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, transparent 0%, transparent 42%, rgba(0, 0, 0, 0.65) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:
 }
 #about p {
     font-size: 20px;
     color: #555;
-    width: 50%;
+
     text-align: left;
     padding: 0 0 16px 0;
 }
@@ -52,25 +98,32 @@ hr {
     color: #000;
     position: relative;
     margin-top: -30px;
-    margin-bottom: 100px;
-    
+    padding-bottom: 100px;
+
     }
 
 #about .btn-primary {
     background: transparent;
-    border: 1px solid #0D8C6F;
+    
     color: #333;
-    padding: 10px, 20px, 20px;
+    padding: 0px, 10px, 20px, 20px;
 }
+
 #about i {
-    color: #0D8C6F 
+    color: #8c67b8
+}
+#about p strong {
+    color: #8c67b8;
 }
 #work {
-    background: rgb(61,163,139);
+    background:
+    linear-gradient(to right, rgba(187,106,255,0.9), rgba(103,139,255,0.9) 100%), url('../img/bg.jpg');; /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    margin-top: -20px;
     color: #eee;
     min-height: 700px;
-    
+
 }
+
 #work hr {
     background: #fff;
 }
@@ -80,12 +133,12 @@ hr {
     position: relative;
     margin-top: -30px;
     margin-bottom: 100px;
-    
+
     }
 figcaption h3 {
     font-weight: 700;
     font-size: 20px;
-    
+
 }
 #contact .btn-primary {
     height: 40px;
@@ -93,26 +146,36 @@ figcaption h3 {
     position: absolute;
     left: 50%;
     margin-left: -50px;
-
-  
+    background: #8c67b8;
+    border: none;
     padding: 8px 16px;
-    background: #3DA38B;
+    
 }
+
 #contact .title {
      margin-top: 20px;
     text-align: center;
-    color: #333;
+    color: #555;
     padding: 0 0 16px;
     font-weight: 700;
-    text-transform:uppercase; 
+    text-transform:uppercase;
 }
 #contactme {
+    margin-top: -50px;
     text-align: center;
     font-weight: 700;
-    color: #333;
+    color: #555;
     font-size: 30px;
-    margin-bottom: 40px;
     
+
+}
+#contact h4 {
+    font-size: 15px;
+    margin-top: -30px;
+    padding-bottom: 50px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
 }
 .topfield::-moz-placeholder,
 .topfield::-webkit-placeholder {
@@ -201,16 +264,16 @@ figcaption h3 {
     font-size: 14px;
     line-height: 1.42857143;
     color: #fff;
-    background-color: #3DA38B;
+    background-color: #8c67b8;
     background-image: none;
-    border: 1px solid rgb(61,163,139);
+    
     border-radius: 4px;
     -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    
+
 }
 .form-control:focus {
     border-color: rgb(61,163,139);
@@ -280,3 +343,65 @@ input[type="search"] {
 .form-group {
     margin-bottom: 15px;
 }
+.carousel-control.left, .carousel-control.right {
+    background-image: none
+}
+.carousel-caption h1 {
+    color: #eee;
+    text-shadow: none;
+    text-transform: uppercase;
+    font-size: 55px;
+    font-weight: 700;
+    text-align: left;
+    letter-spacing: 2px;
+
+}
+.navbar-brand span {
+    font-size: 0.8em;
+    
+}
+.carousel-caption h3 {
+    color: rgba(250,250,250, 0.8);
+    text-shadow: none;
+    letter-spacing: 8px;
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: left;
+    margin-bottom: -15px;
+}
+.carousel-caption h4 span {
+    display: block;
+    font-size: 15px;
+    margin-top: 10px;
+    letter-spacing: 3px 
+
+}
+.carousel-caption h4 {
+    text-align: left;
+    font-size: 25px;
+    text-shadow: none;
+    color: #eee;
+}
+.grow { transition: all .5s ease-in-out; }
+.grow:hover { transform: scale(1.3); }
+
+.description {
+    position: absolute;
+    top: 20px;
+    left: 30%;
+    text-align: center;
+    display: none;
+
+}
+.block {
+    display: block;
+}
+figcaption h4 {
+    font-size: 10px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+
+
+
