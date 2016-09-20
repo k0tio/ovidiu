@@ -132,7 +132,7 @@ hr {
     color: #000;
     position: relative;
     margin-top: -30px;
-    margin-bottom: 100px;
+    
 
     }
 figcaption h3 {
@@ -143,7 +143,8 @@ figcaption h3 {
 #contact .btn-primary {
     height: 40px;
     width: 100px;
-    position: absolute;
+    position: relative;
+    margin-bottom: 40px;
     left: 50%;
     margin-left: -50px;
     background: #8c67b8;
@@ -158,6 +159,7 @@ figcaption h3 {
     color: #555;
     padding: 0 0 16px;
     font-weight: 700;
+    padding-top: 20px;
     text-transform:uppercase;
 }
 #contactme {
