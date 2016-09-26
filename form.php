@@ -1,22 +1,43 @@
 <?php
-	if (isset($_POST["submit"])) {
-		$name = $_POST['name'];
-		$email = $_POST['email'];
-		$phone = $_POST['phone'];
-		$home = $_POST['phone'];
-		$from = 'Ovidiu.co.uk'; 
-		$to = 'obalau@gmail.com'; 
-		$subject = "Message from : $name , $phone ";
-		
-		$body = "From: $name & $phone \n E-Mail: $email\n Message:\n $message";
- 	}
- 
-// If there are no errors, send the email
 
-	if (mail ($to, $subject, $body, $from)) {
-		$result='<div class="alert alert-success">Thank You! I will be in touch</div>';
-	} else {
-		$result='<div class="alert alert-danger">Sorry there was an error sending your message. Please try again later</div>';
-	}
-	echo $result;
+define("WEBMASTER_EMAIL", 'obalau@gmail.com');
+
+
+error_reporting (E_ALL ^ E_NOTICE);
+
+$post = (!empty($_POST)) ? true : false;
+
+if($post)
+{
+
+$name = stripslashes($_POST['name']);
+$email = trim($_POST['email']);
+$subject = stripslashes($_POST['subject']);
+$message = stripslashes($_POST['message']);
+
+
+$error = '';
+
+
+
+if(!$error)
+{
+$mail = mail(WEBMASTER_EMAIL, $subject, $message,
+     "From: ".$name." <".$email.">\r\n"
+    ."Reply-To: ".$email."\r\n"
+    ."X-Mailer: PHP/" . phpversion());
+
+
+if($mail)
+{
+echo 'OK';
+}
+
+}
+
+
+
+
+
+}
 ?>

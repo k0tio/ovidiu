@@ -115,7 +115,7 @@
       <hr>
 	    	<div class="col-md-8 col-sm-12">
 	        
-	        <p>I am a <b>meticulous</b> undergraduate first year student who is eager to undertake complex tasks, meet tight deadlines and deliver outstanding performance.</p>
+	        <p>I am a <b>meticulous</b> undergraduate web developer who is eager to undertake complex tasks, meet tight deadlines and deliver outstanding performance.</p>
 	        <p>In every project that I develop, whether it's a <strong>web app</strong>, a <strong>mobile app</strong> or <strong>web design</strong>, I strive to look for the client's best interest and ensure that they can greatly benefit from my services</p>
 	        <p>I possess practical knowledge in web design, web development and programming. Currently studying towards a BSc in Computer Science and working along with personal clients. </p>
 	        <a class="btn btn-primary btn-lg" href="https://drive.google.com/open?id=1upMXMdU_m2_FydCoyQwDCD8OppBxmMVmqzsG-S6NbvM" role="button"><i class="fa fa-download"></i> CV</a>
@@ -144,7 +144,7 @@
             </figcaption>
         </div>
       </a>
-      <a href="http:/www.smartchildren.co.uk">
+      <a href="http://www.smartchildren.co.uk">
         <div class="col-md-3  col-sm-6 col-xs-12 imghvr-fade figure"  id="figure2">
           <img src="work/smartchildren.png" alt="">
            <figcaption>
@@ -216,7 +216,7 @@
           </figcaption>
         </div>
       </a>  
-      <a href="http://www.ovidiu.co.uk/w/computercrazy">
+      <a href="work/bandits.jpg">
         <div class="col-md-3 col-sm-6  col-xs-12 imghvr-fade  figure" id="figure4">
           <img src="work/bandits.jpg" alt="">
           <figcaption>
@@ -238,29 +238,61 @@
         <h1 id="contactme">Leave a message below</h1>
         <h4>Whether it's a quote, plan or simply want to chat, I'll get back to you as fast as possible!</h4>
         <div class="col-md-12">
-          <form class="form-horizontal" role="form" method="post" action="form.php">
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="name" class="form-control" name="name" id="name" placeholder="* Name" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="email" class="form-control" name="email" id="email" placeholder="* Email" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-12">
-                <input type="phone" class="form-control" id="phone" name="phone" placeholder="* Phone number" required>
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="col-sm-12">
-               <textarea class="form-control" rows="3" name="message" id="message"placeholder="* Message" required></textarea>
-              </div>
-            </div>
-            <button type="submit" class="btn btn-primary btn-lg text-center" >Submit</button>
-          </form>
+       
+                        <form action="form.php" class="validateform"
+                        id="contactform" method="post" name="send-contact">
+                            <div id="sendmessage">
+                                Your message has been sent. Thank you!
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-4 field">
+                                    <input data-msg=
+                                    "Please enter at least 4 chars" data-rule=
+                                    "maxlen:4" name="name" placeholder=
+                                    "* Enter your full name" type="text">
+
+                                    <div class="validation"></div>
+                                </div>
+
+                                <div class="col-lg-4 field">
+                                    <input data-msg=
+                                    "Please enter a valid email" data-rule=
+                                    "email" name="email" placeholder=
+                                    "* Enter your email address" type="text">
+
+                                    <div class="validation"></div>
+                                </div>
+
+                                <div class="col-lg-4 field">
+                                    <input data-msg=
+                                    "Please enter at least 4 chars" data-rule=
+                                    "maxlen:4" name="subject" placeholder=
+                                    "Enter your subject" type="text">
+
+                                    <div class="validation"></div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 margintop10 field">
+                                    <textarea class="input-block-level"
+                                    data-msg="Please write something"
+                                    data-rule="required" name="message"
+                                    placeholder="* Your message here..." rows=
+                                    "12">
+</textarea>
+
+                                    <div class="validation"></div>
+
+                                    <p><button class=
+                                    "btn btn-primary margintop10 pull-left" type=
+                                    "submit">Submit message</button>
+                                    <span class="pull-right margintop20">*
+                                    Please fill all required form
+                                    field.</span></p>
+                                </div>
+                           </div>
+                        </form>
        </div>
       </div>
     </div>
